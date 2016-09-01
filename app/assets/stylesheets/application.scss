@@ -1,0 +1,51 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+  background: url(https://source.unsplash.com/category/nature/1800x1200) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  margin-top: 50px;
+}
+
+body {
+  background-color: transparent;
+}
+
+h1, h2, h4 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+
+#food, #reaction {
+  margin-top: 100px;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .content, #food, #reaction {
+    margin-top: 150px;
+  }
+
+  .title {
+    letter-spacing: 4px;
+  }
+}
