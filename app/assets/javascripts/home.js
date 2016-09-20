@@ -6,7 +6,7 @@ $(document).ready(function() {
     "Delectable!"
   ];
 
-  $.getJSON("https://alexsdinner.herokuapp.com/api/v1/dinner/today.json", function(data) {
+  $.getJSON("https://alexsdinner.herokuapp.com/api/v1/dinner/today", function(data) {
     if (data.length === 1) {
       $("#food").text(data[0].food);
       var reaction = reactions[Math.floor(Math.random() * reactions.length)];
